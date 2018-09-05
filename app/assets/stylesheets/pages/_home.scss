@@ -1,1 +1,89 @@
 // Specific CSS for your home-page
+.house-animator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interactive-images {
+  background-size: contain;
+  width: 100vw;
+  img {
+    width: 100%;
+  }
+  #highlights, #fassade {
+    mix-blend-mode: multiply;
+  }
+  .active {
+
+  }
+}
+
+.house-animator-controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  border-radius: 5px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 1px 7px 0px rgba(93, 93, 93, 0.24);
+  padding: 53px 36px;
+  h1 {
+    font-size: 17px;
+    font-family: "PontiacBold", "Helvetica", "sans-serif";
+    color: #000000;
+  }
+  .house-stlye-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .active {
+      background-color: green;
+    }
+  }
+  .color-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    .btn-color{
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .active2 {
+      opacity: 1;
+    }
+    .active1 {
+      opacity: 1;
+    }
+  }
+}
+
+.roof-type-toggle {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .roof-types {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    :first-child {
+      margin-right: 5px;
+    }
+
+    p {
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: Helvetica;
+      color: black;
+    }
+  }
+}
+
+#highlights, #fassade{
+  filter: blur(0.3px);
+  fill: none;
+}
+

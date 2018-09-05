@@ -1,2 +1,96 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="house-animator">
+  <div class="interactive-images displayed" id="house-1-flat">
+    <%= render("svg/142-wFR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-1-gab">
+    <%= render("svg/142-wSR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-2-flat">
+    <%= render("svg/160-wFR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-2-gab">
+    <%= render("svg/160-wSR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-3-flat">
+    <%= render("svg/209-N-wFR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-3-gab">
+    <%= render("svg/209-N-wSR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-4-flat">
+    <%= render("svg/209-S-wFR") %>
+  </div>
+  <div class="interactive-images hidden" id="house-4-gab">
+    <%= render("svg/209-S-wSR") %>
+  </div>
+</div>
+<div class="limit-width">
+  <div class="move-up-small  house-animator-controls">
+    <div class="house-style">
+      <h1>Stil des Hauses</h1>
+      <div class="house-stlye-buttons">
+        <div id="house-style" class="btn-rop btn-animator active">Stil 1</div>
+        <div id="house-style" class="btn-rop btn-animator">Stil 2</div>
+        <div id="house-style" class="btn-rop btn-animator">Stil 3</div>
+        <div id="house-style" class="btn-rop btn-animator">Stil 4</div>
+      </div>
+    </div>
+    <div class="roof-type">
+      <h1>Dachart</h1>
+      <div class="roof-type-toggle">
+        <div class="roof-types">
+          <div>
+            <p>Flachdach</p>
+          </div>
+          <div id="toggle" class="switch">
+            <input type="checkbox" id="id-name--1" name="set-name" class="switch-input">
+            <label for="id-name--1" class="switch-label">
+
+            </label>
+          </div>
+          <div>
+            <p>Giebeldach</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fassade-colors">
+      <h1>Farbe der Fassade</h1>
+      <div class="color-buttons">
+        <div id="fassade-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="fassade-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="fassade-btn" class="btn-rop btn-color">
+
+        </div>
+      </div>
+    </div>
+    <div class="highlight-colors">
+      <h1>Farbe der Akzente</h1>
+      <div class="color-buttons">
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+        <div id="highlight-btn" class="btn-rop btn-color">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_pack_tag 'houses_animator' %>

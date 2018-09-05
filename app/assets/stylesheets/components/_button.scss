@@ -1,0 +1,49 @@
+.btn-rop {
+  color: white;
+  padding: 19px 50px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: white;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 1px 7px 0px rgba(93, 93, 93, 0.24);
+}
+.btn-rop:not(.btn-toggle):hover {
+  box-shadow: 0px 4px 18px 0px rgba(93, 93, 93, 0.24);
+  bottom: 21px;
+  transition: ease .3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-animator {
+  color: rgba(0,0,0,0.7);
+  border-radius: 2px;
+  background: white;
+  margin: 5px 5px 5px 0;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.btn-toggle {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 30px;
+  width: 70px;
+  &:hover {
+    cursor: pointer;
+  }
+  .ball-toggle {
+    background-color: green;
+    height: 21px;
+    width: 21px;
+    border-radius:50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+  }
+}
